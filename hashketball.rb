@@ -59,7 +59,7 @@ good_practices
                                       
                                   
                       
-                   },
+                   } ,
                    
        :away => {:team_name =>"Charlotte Hornets",
                 :colors => ["Turquoise", "Purple"],
@@ -106,8 +106,7 @@ good_practices
                                         blocks:5, 
                                         slam_dunks:12},                                                                              }
                            }     
-         
-                 }
+        
 end     
 
 
