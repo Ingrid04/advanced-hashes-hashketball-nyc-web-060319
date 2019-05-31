@@ -231,7 +231,7 @@ end
 
 def long_name_steals_a_ton?()
   most_steals = 0
-  player_with_most_steals = nil
+  player_with_most_steals = ?
   
   game_hash().each do |location, team_data|
     team_data[:players].each do |player_name, player_stats|
