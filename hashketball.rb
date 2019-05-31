@@ -211,11 +211,21 @@ def winning_team()
   home_team_score > away_team_total_score ? messageA : messageB
 end
 
-
-
-
-
-
+def player_with_longest_name()
+  longest_length = 0
+  longest_player_name = nil
+  
+  game_hash().each do |location, team_data|
+    team_data[:players].each do |player_name, player_stats|
+      if player_name.length > longest_length
+        longest_length = player_name.length
+        longest_player_name = player_name
+      end
+    end
+  end
+  
+  longest_player_name
+end
 
 
 def long_name_steals_a_ton?()
