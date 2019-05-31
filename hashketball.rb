@@ -57,7 +57,7 @@ good_practices
                                         slam_dunks:1},
                                       
                                       
-                                  },
+                                  
                       
                    },
                    
@@ -105,7 +105,7 @@ good_practices
                                         steals:22, 
                                         blocks:5, 
                                         slam_dunks:12},                                                                              }
-                           },     
+                           }     
          
                  }
 end     
