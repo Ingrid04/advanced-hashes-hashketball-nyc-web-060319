@@ -187,7 +187,21 @@ def big_shoe_rebounds()
 end
 
 
-
+def long_name_steals_a_ton?()
+  most_steals = 0
+  player_with_most_steals = nil
+  
+  game_hash().each do |location, team_data|
+    team_data[:players].each do |player_name, player_stats|
+      if player_stats[:steals] > most_steals
+        most_steals = player_stats[:steals]
+        player_with_most_steals = player_name
+      end
+    end
+  end
+  
+  player_with_longest_name() == player_with_most_steals ? true : false
+end
 
 
   
