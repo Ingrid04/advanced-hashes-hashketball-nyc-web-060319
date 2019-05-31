@@ -202,6 +202,15 @@ def most_points_scored()
   player_with_largest_score
 end
 
+def winning_team()
+  home_team_score = home_team_total_score()
+  away_team_score = away_team_total_score()
+  messageA = "The winning team is the home team: Brooklyn Nets! Brooklyn Nets: #{home_team_score}; Charlotte Hornets: #{away_team_score}"
+  messageB = "The winning team is the away team: Charlotte Hornets! Brooklyn Nets: #{home_team_score}; Charlotte Hornets: #{away_team_score}"
+  
+  home_team_score > away_team_total_score ? messageA : messageB
+end
+
 
 
 
